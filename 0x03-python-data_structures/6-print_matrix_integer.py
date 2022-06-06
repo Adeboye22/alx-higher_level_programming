@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-def no_c(my_string):
-    new_list = list(my_string)
-    new_string = ""
-    for i in new_list:
-        if i != 'c' and i != 'C':
-            new_string += i
-    return (new_string)
+def print_matrix_integer(matrix=[[]]):
+    for row in matrix:
+        for col in range(len(row)):
+            print(
+                "{:d}".format(row[col]),
+                end="" if col == len(row) - 1 else " ")
+        print("")

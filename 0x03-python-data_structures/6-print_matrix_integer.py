@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-def print_matrix_integer(matrix=[[]]):
-    for line in matrix:
-        for col in range(len(line)):
-            print(
-                    "{:d}".format(line[col]),
-                    end="" if col == len(line) -1 else " ")
-        print("")
+
+def no_c(my_string):
+    new_list = list(my_string)
+    new_string = ""
+    for i in new_list:
+        if i != 'c' and i != 'C':
+            new_string += i
+    return (new_string)

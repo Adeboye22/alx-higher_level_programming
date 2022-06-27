@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """This function define a rectangle by private instance attribute."""
 
